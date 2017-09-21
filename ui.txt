@@ -1,0 +1,97 @@
+/*label {
+	text: "Bernardo Breder está testando o texto que eu irei fazer com que a quebra de linha ocorra toda vez que eu entrar com textos novos. Para isso eu preciso escrever o bastante para que possa ter caracteres suficiente para ter várias quebras de linha. Além disso, eu também preciso gerar caracteres com assento para que possa testar o charset utf-8.
+}*/
+border {
+	up: horizontal {
+		bgcolor: 0xaaaaaa
+		margin: 2
+		content: [
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "New"
+				font-size: 14
+			}
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "Open"
+				font-size: 14
+			}
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "Save"
+				font-size: 14
+			}
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "SaveAs"
+				font-size: 14
+			}
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "Close"
+				font-size: 14
+			}
+			label {
+				margin: 2
+				bgcolor: 0x888888
+				border-color: 0xcccccc
+				border-size: 1
+				text: "Help"
+				font-size: 14
+			}
+		]	
+	}
+	center: scroll { 
+		content: vertical {
+			content: [
+				label {
+					text: "Bernardo está testando o teste que estou fazendo. 
+Para fazer isso eu preciso escrever. Preciso o máximo possível para que eu posso ter texto sufiente para que possa ter várias linhas."
+					fontsize: 12
+				}
+				label {
+					text: "Para isso eu tenho que fazer"
+					fontsize: 12
+				}
+				label {
+					text: "Tudo o que me for solicitado"
+					fontsize: 12
+				}
+			]
+		}
+	}
+	/*down: border {
+		bgcolor: 0xaaaaaa
+		left: label {
+            text: "Ber"
+            font-size: 14
+        }
+        center: label {
+            text: "Ber"
+            font-size: 14
+        }
+        right: label {
+            text: "Ber"
+            font-size: 14
+        }
+	}*/
+}
+/*scroll {id='s' content: vertical{margin:1 padding:2 bgcolor:0xff0000 content:[
+			label{id='a' text:'a' margin 5 padding 10 bgcolor:0x00ff00 height: 250}
+			label{id='b' text:'a' margin 5 padding 10 bgcolor:0x00ff00 height: 250}
+			label{id='c' text:'a' margin 5 padding 10 bgcolor:0x00ff00 height: 250}]}}*/

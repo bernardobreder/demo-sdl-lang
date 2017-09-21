@@ -1,0 +1,76 @@
+// Inicializa os testes
+
+console.println("Simple Frame...")
+window.create(600, 400)
+window.setContent($"label{}")
+window.close()
+
+console.println("Label with Id...")
+window.create(600, 400)
+window.setContent($"
+label{
+	id:'abc'
+}
+")
+assert.requireNotEmpty(#abc)
+window.close()
+
+console.println("Label with Id...")
+window.create(600, 400)
+window.setContent($"
+vertical { 
+	id: 'a' 
+	content: [
+		label {
+			id:'b'
+		} 
+		label{
+			id:'c'
+		} 
+		label{
+			id:'d'
+		}
+	]
+}
+")
+assert.requireEquals(4, (#a + #b + #c + #d).size())
+window.close()
+
+console.println("Find All Components...")
+window.create(600, 400)
+window.setContent($"
+scroll{
+	id:'a' 
+	content:border{ 
+		id:'b' 
+			center:vertical{
+				id:'c' 
+				content:[
+					horizontal{
+						id:'d' 
+						content:[
+							label{
+								id='e'
+							}
+							text{
+								id:'f'
+							}
+							area{
+								id:'g'
+							}
+							button{
+								id='h'
+							}
+							image{
+								id='i'
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}
+")
+assert.requireEquals(9, (#a + #b + #c + #d + #e + #f + #g + #h + #i).size())
+window.close()
